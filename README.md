@@ -1,1 +1,4 @@
 # Machine-Learning-Final-Project
+
+Overview
+The main goal of this project is to understand the types of linguistic representations a language model learns when tasked with identifying Spanish dialects. Specifically, I aim to determine whether these models rely more heavily on dialect-specific vocabulary (lexicon) or on grammatical structures (syntax). To answer this question, I trained two recurrect neural networks (RNNs) using a Spanish corpus of texts - one trained on lexical input, the other trained on syntactic input via part-of-speech (PoS) tags. By comparing their performance s=using standard metrics - precision, recall, accuracy, and F-1 score - my findings indicate that that model trained on lexical data outperformed the syntactic model. These results suggest that high perfroming language models rely more heavily on lexical cues rather than grammatical patterns in text classification. 
