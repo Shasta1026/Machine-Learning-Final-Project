@@ -14,7 +14,7 @@ The corpus is comprised of text samples from 21 different Spanish speaking count
 
 An equal distribution of texts from each region is used (18790 samples per region). The data is split 80%/10%/10% for training, validation, and testing, respectively. 
 
-### 2. Preprocess Lexical Dataset (Run Lexical_notebook)
+### 2. Preprocess Lexical Dataset (Run Lexical_Splits)
 - Normalize text (get rid of punctuation, spaces, lovercase text)
 - Tokenize into word sequences using _Stanza_
 - Build a lexical vocabulary
