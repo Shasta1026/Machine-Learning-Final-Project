@@ -13,6 +13,7 @@ The corpus is comprised of text samples from 21 different Spanish speaking count
 - Central America: Honduras, Guatemala, El Salvador, Nicaragua, Panama, Costa Rica
 
 An equal distribution of texts from each region is used (18790 samples per region). The data is split 80%/10%/10% for training, validation, and testing, respectively. 
+***Dataset is too big to add to this repo***
 
 ### 2. Preprocess Lexical Dataset (Run Lexical_Splits)
 - Normalize text (get rid of punctuation, spaces, lovercase text)
