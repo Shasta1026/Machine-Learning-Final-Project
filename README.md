@@ -14,13 +14,13 @@ The corpus is comprised of text samples from 21 different Spanish speaking count
 
 An equal distribution of texts from each region is used (18790 samples per region). The data is split 80%/10%/10% for training, validation, and testing, respectively. 
 
-### 2. Preprocess Lexical Dataset
+### 2. Preprocess Lexical Dataset (Run Lexical_notebook)
 - Normalize text (get rid of punctuation, spaces, lovercase text)
 - Tokenize into word sequences using _Stanza_
 - Build a lexical vocabulary
 - Make sequences a fixed length of 200 tokens.
 
-### 3. Preprocess the Syntactic Dataset
+### 3. Preprocess the Syntactic Dataset (Run Syntactic_Notebook)
 - Use _Stanza_ to PoS tag on each sentence
 - Build a PoS tag vocabulary
 - Make sequences a fixed length of 200 tokens
