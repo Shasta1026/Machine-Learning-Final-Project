@@ -13,7 +13,7 @@ The corpus is comprised of text samples from 21 different Spanish speaking count
 - Central America: Honduras, Guatemala, El Salvador, Nicaragua, Panama, Costa Rica
 
 An equal distribution of texts from each region is used (18790 samples per region). The data is split 80%/10%/10% for training, validation, and testing, respectively. 
-***Dataset is too big to add to this repo***
+***Entire dataset is too big to add to this repo, a sample of the data used for training is included***
 
 ### 2. Preprocess Lexical Dataset (Run Lexical_Splits)
 - Normalize text (get rid of punctuation, spaces, lovercase text)
@@ -26,9 +26,25 @@ An equal distribution of texts from each region is used (18790 samples per regio
 - Build a PoS tag vocabulary
 - Make sequences a fixed length of 200 tokens
 
+### 4. RNN Model 
+- Create an RNN with bidirectional set to true, 128 hidden layers, and relu activation
 
+### 5. Train the Models
+- Train for 10 epochs using the Adam optimizer and CrossEntropyLoss.
+- Log training/validation accuracy and loss at each epoch
+- Save predictions into a tsv file with true and predicted lebels
 
-
+### 5. Evaluate Performance
+- Compute precesion, recall, accuracy, and F-1 Score
+- Create a confusion matrix for further analysis
 
 ## Future Directions 
 Future work could involve experimenting with different architectures, such as Long Short-Term Memory networks (LSTMs), to determine whether they achieve improved performance over basic RNNs in dialect identification. Another promising direction is to explore unsupervised learning approaches, which could provide insight into how dialects naturally cluster based on linguistic features without relying on labeled data. Additionally, expanding the scope of the study to include other languages with rich dialectal variation—such as Arabic, Chinese, or French—would allow for a broader understanding of how language models generalize across different linguistic systems.
+
+## Time Spent
+- Balancing data: 4hrs
+- Preprocessing lexical data: 25 hrs (with job submission)
+- preprocessing syntactic data: 32 hrs (with job submission)
+- Creating RNN models: 8 hrs
+- Training models and generating predictions: 3hrs
+- Calculating metrics: 15min
